@@ -75,6 +75,8 @@ gallery.addEventListener('click', event => {
 
     const img = event.target.closest('.gallery-image');
 
+    if (!img) return;
+
 
     const dataSource = img.dataset.source;
 
